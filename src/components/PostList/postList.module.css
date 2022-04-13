@@ -1,0 +1,33 @@
+.list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.heading {
+	margin-bottom: 15px;
+
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.postEnter {
+	opacity: 0;
+}
+.postEnterActive {
+	opacity: 1;
+	transition: opacity 500ms ease-in;
+}
+.postExit {
+	opacity: 1;
+}
+.postExitActive {
+	opacity: 0;
+	transition: opacity 500ms ease-in;
+}
+
+.empty {
+	font-size: 32px;
+	text-transform: uppercase;
+	text-align: center;
+}

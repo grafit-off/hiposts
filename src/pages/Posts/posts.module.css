@@ -1,0 +1,19 @@
+.createBtn {
+	margin-bottom: 30px;
+}
+
+.posts {
+	margin-bottom: 30px;
+}
+
+.lastElement {
+	height: 1px;
+	background-color: transparent;
+}
+
+.error {
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}

@@ -1,0 +1,28 @@
+.btn {
+	display: inline-block;
+
+	padding: 7px 15px;
+
+	border: 1px solid #36bdf7;
+	background-color: transparent;
+	cursor: pointer;
+	outline: 0;
+
+	transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:focus {
+	box-shadow: inset 0px 0px 0px 3px #08a7fc;
+	transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #36bdf7;
+	color: #000;
+
+	transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:disabled {
+	cursor: default;
+}

@@ -1,0 +1,29 @@
+.link {
+	display: inline;
+
+	color: #36bdf7;
+	outline: 0;
+	cursor: pointer;
+
+	transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.link:focus {
+	box-shadow: 0px 0px 0px 3px #08a7fc;
+	transition: box-shadow 0.3s ease;
+}
+
+.link:hover {
+	background-color: #36bdf7;
+	color: #191919;
+
+	transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.disabled {
+	pointer-events: none;
+	color: #858585;
+	border-bottom: 1px solid #858585;
+
+	transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}

@@ -1,0 +1,16 @@
+.input {
+	margin-bottom: 20px;
+}
+
+.labelName {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.selects {
+	display: flex;
+}
+
+.label:not(:last-child) {
+	margin-right: 20px;
+}

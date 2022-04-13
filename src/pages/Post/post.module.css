@@ -1,0 +1,33 @@
+.post {
+	margin-bottom: 30px;
+}
+
+.heading {
+	margin-bottom: 15px;
+
+	text-transform: uppercase;
+}
+
+.text {
+	margin-bottom: 15px;
+
+	font-size: 24px;
+}
+
+.text::first-letter {
+	text-transform: uppercase;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+
+	padding-bottom: 15px;
+
+	border-bottom: 1px solid #36bdf7;
+}
+@media (max-width: 768px) {
+	.text {
+		font-size: 16px;
+	}
+}

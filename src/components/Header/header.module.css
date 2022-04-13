@@ -1,0 +1,27 @@
+.header {
+	padding: 20px;
+
+	margin-bottom: 30px;
+	border-bottom: 1px solid #36bdf7;
+}
+
+.navList {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.navItem:not(:last-child) {
+	margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+	.header {
+		padding: 10px;
+		display: flex;
+		justify-content: center;
+	}
+	.navItem:not(:last-child) {
+		margin-right: 10px;
+	}
+}

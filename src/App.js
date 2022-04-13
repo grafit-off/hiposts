@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './assets/css/normilize.css';
+import './assets/css/reset.css';
+import './assets/css/app.css';
+
+import Header from './components/Header/Header';
+import AppRoutes from './AppRoutes';
+import { AuthContext } from './context/context';
+import Footer from './components/Footer/Footer';
+
+export default () => {
+	const [authInfo, setAuthInfo] = useState({ name: 'Guest', isAuth: false });
+	const [isLoading, setIsLoading] = useState(true);
+
+	useEffect(() => {
+		if (localStorage.getItem('isAuth') && localStorage.getItem('authUserName')) {
+			setAuthInfo({ name: localStorage.getItem('authUserName'), isAuth: localStorage.getItem('isAuth') })
+		};
+		setIsLoading(false);
+
+		return () => {
+			console.log('unmount')
+		};
+	}, []);
+
+	return (
+		<AuthContext.Provider value={{ authInfo, setAuthInfo, isLoading }} >
+			<BrowserRouter>
+				<Header />
+				<AppRoutes />
+				<Footer />
+			</BrowserRouter>
+		</AuthContext.Provider >
+
+	);
 }
-
-export default App;

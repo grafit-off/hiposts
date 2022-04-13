@@ -1,0 +1,41 @@
+.item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.post {
+	padding: 20px;
+	border: 1px solid #36bdf7;
+}
+
+.heading {
+	margin-bottom: 15px;
+
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.text {
+	margin-bottom: 15px;
+}
+.text::first-letter {
+	text-transform: uppercase;
+}
+.buttons {
+	display: flex;
+	justify-content: space-between;
+}
+@media (max-width: 767px) {
+	.item:not(:last-child) {
+		margin-bottom: 15px;
+	}
+	.post {
+		padding: 10px;
+	}
+	.heading {
+		font-size: 16px;
+	}
+	.text {
+		font-size: 16px;
+	}
+}

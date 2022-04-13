@@ -1,0 +1,77 @@
+.item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.comment {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 20px;
+
+	background-color: #202020;
+}
+
+.id {
+	flex: 0 0 15%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-right: 20px;
+
+	font-size: 50px;
+	font-weight: 700;
+}
+
+.info {
+	flex: 1 1 auto;
+}
+
+.name {
+	display: block;
+
+	margin-bottom: 10px;
+
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.email {
+	margin-bottom: 10px;
+
+	font-style: italic;
+	text-transform: lowercase;
+}
+
+.body::first-letter {
+	text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+	.comment {
+		flex-direction: column;
+	}
+	.id {
+		flex: none;
+
+		margin-right: 0;
+		margin-bottom: 20px;
+
+		font-size: 50px;
+	}
+
+	.info {
+		flex: none;
+	}
+
+	.name {
+		font-size: 16px;
+	}
+
+	.email {
+		font-size: 14px;
+	}
+
+	.body {
+		font-size: 14px;
+	}
+}

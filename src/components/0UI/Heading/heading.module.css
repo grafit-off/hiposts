@@ -1,0 +1,10 @@
+.heading {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+@media (max-width: 768px) {
+	.heading {
+		font-size: 20px;
+	}
+}
